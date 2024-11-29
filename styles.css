@@ -93,7 +93,7 @@ body{
     padding:0;
 }
 .left{
-    background-image: url("/home/jonah/odin/form/nextbike.jpeg");
+    background-image: url("https://ludicacid.com/nextbike.jpeg");
     background-size: cover;
     background-position: center;
     width:33.333vw;
@@ -159,7 +159,7 @@ legend{
 }
 
 input[type="password"], input[type="tel"], input[type="email"], .name{
-border-color: grey;
+border:5px  rgb(224, 217, 217);
 border-radius: 5px;
 padding:7px;
 }
