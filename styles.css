@@ -178,12 +178,12 @@ label[class="tooltip"]{
 input:focus{
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
     border-color:  rgb(84, 134, 226);
-    outline:none;
+    /* outline:none; */
 }
 input:invalid{
     background-color: rgba(255, 0, 0, 0.2);
     border-color:rgb(228, 24, 24);
-    outline:none;
+    /* outline:none; */
 }
 
 input:invalid ~ label[class="tooltip"]{
