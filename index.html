@@ -17,37 +17,52 @@
         <h2>This is not a real online service! You know you need to do something like this in your life to help you realize your deepest dreams. <br>
             Sign up <em>now</em> to get started.</h2>
         <h2> You <em>know</em> you want to.</h2>
-            <form class="log-in" id="sign-up">
+            <form class="sign-up" id="sign-up">
                 <section>                
                     <legend>Let's do this!</legend>
-                    <div class="coldiv">
-                        <div class="col1">
-                            <label for="first-name">FIRST NAME</label>
-                            <input class="name" id="first-name" name="first-name">
-
-                            <label for="email">EMAIL</label>
-                            <input type="email" id="email" name="email">
-
-                            <label for="password1">PASSWORD</label>
-                            <input type="password" id="password1" name="password1">                        
+                    <div class="rowsdiv">
+                        <div class="row1">
+                            
+                            <div class="formgroup">
+                                <label for="first-name">FIRST NAME</label>
+                                <input class="name" id="first-name" name="first-name">
+                            </div>
+                            <div class="formgroup">
+                                <label for="surname">LAST NAME</label>
+                                <input class="name" id="surname" name="surname">
+                            </div>
                         </div>
                         
-                        <div class="col2">
-                            <label for="surname">LAST NAME</label>
-                            <input class="name" id="surname" name="surname">
+                        <div class="row2">            
+                            <div class="formgroup">
+                                <label for="number">PHONE NUMBER</label>
+                                <input type="tel" id="number" name="number">
+                            </div>
 
-                            <label for="number">PHONE NUMBER</label>
-                            <input type="tel" id="number" name="number">
-                            
-                            <label for="password2">CONFIRM PASSWORD</label>
-                            <input type="password" id="password2" name="password2">
+                            <div class="formgroup">
+                                <label for="email">EMAIL</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                        </div>
+                        <div class="row3">
+                            <div class="formgroup">
+                                <label for="password1">PASSWORD</label>
+                                <input type="password" id="password1" name="password1" pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$">
+                                <label for="password1" class="tooltip">Invalid Password</label>
+                            </div>     
+
+                            <div class="formgroup">
+                                <label for="password2">CONFIRM PASSWORD</label>
+                                <input type="password" id="password2" name="password2" pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$" >
+                                <label for="password1" class="tooltip">Invalid Password</label>
+                            </div>
                         </div>
                     </div>        
                 </section>
                 
             </form>
             <button type="submit" form="sign-up">Create Account</button>
-            <p>Already have an account? <a href="somewhere.com">Log in</a></p>
+            <p>Already have an account? <strong><a href="somewhere.com">Log in</a></strong></p>
     </div>
 </body>
 </html>

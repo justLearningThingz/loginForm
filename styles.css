@@ -137,24 +137,41 @@ section{
     width:100%;
     
 }
-.coldiv{
+.rowsdiv{
     display:flex;
-    gap:4rem;
+    flex-direction: column;
+    gap:2rem;
 
 }
-.col1, .col2{
+.row1, .row2, .row3{
     display:flex;
+    gap:6rem;
+}
+.formgroup{
+    display: flex;
     flex-direction: column;
 }
 
 legend{
     margin-bottom: 1rem;
     font-weight: 700;
+    font-size: larger;
 }
 
 input[type="password"], input[type="tel"], input[type="email"], .name{
 border-color: grey;
 border-radius: 5px;
+padding:7px;
+}
+
+label{
+    font-size: smaller;
+}
+label[class="tooltip"]{
+    font-size: small;
+    display: none;
+    color: red;
+    margin-top: 5px;
 }
 
 
@@ -163,10 +180,14 @@ input:focus{
     border-color:  rgb(84, 134, 226);
     outline:none;
 }
-input:focus:invalid{
+input:invalid{
     background-color: rgba(255, 0, 0, 0.2);
     border-color:rgb(228, 24, 24);
     outline:none;
+}
+
+input:invalid ~ label[class="tooltip"]{
+    display:block;
 }
 
 button[type="submit"]{
